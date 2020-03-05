@@ -3,6 +3,7 @@ package model;
 import lombok.*;
 
 @Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder(toBuilder = true)
@@ -22,4 +23,7 @@ public class PersonModel {
 
 	@Builder.Default
 	private String username = "Micky";
+
+	@Builder.Default
+	private boolean vacation = false;
 }
