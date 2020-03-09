@@ -26,7 +26,7 @@ dependencies {
     compile("com.google.flogger", "flogger", Version.FLOGGER)
     compile("org.apache.commons", "commons-lang3", Version.APACHE_COMMONS)
     compile("org.junit.jupiter", "junit-jupiter", Version.JUNIT)
-    compile("com.fasterxml.jackson.core", "jackson-databind", "2.10.3")
+    compile("com.fasterxml.jackson.core", "jackson-databind", Version.JACKSON)
 }
 
 configure<JavaPluginConvention> {
