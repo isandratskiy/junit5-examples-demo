@@ -1,4 +1,4 @@
-package resolver;
+package _01_resolver;
 
 import model.PersonModel;
 import org.junit.jupiter.api.DisplayName;

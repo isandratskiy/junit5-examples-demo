@@ -1,4 +1,4 @@
-package resolver;
+package _01_resolver;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

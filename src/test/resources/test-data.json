@@ -1,0 +1,26 @@
+[
+  {
+    "firstName": "Sak",
+    "lastName": "Muwaan",
+    "password": "67676767676",
+    "email": "muwaan@gmail.com",
+    "user": "muwaan",
+    "vacation": false
+  },
+  {
+    "firstName": "bar",
+    "lastName": "foo",
+    "password": "foo",
+    "email": "foo",
+    "user": "foo",
+    "vacation": true
+  },
+  {
+    "firstName": "foo",
+    "lastName": "foo",
+    "password": "foo",
+    "email": "foo",
+    "user": "foo",
+    "vacation": false
+  }
+]

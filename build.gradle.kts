@@ -1,3 +1,4 @@
+@file:Suppress("DEPRECATION")
 
 group = "junit5.examples.demo"
 version = "1.0.0"
@@ -17,6 +18,7 @@ object Version {
     const val JUNIT = "5.6.0"
     const val LOMBOK = "1.18.10"
     const val APACHE_COMMONS = "3.9"
+    const val JACKSON = "2.10.3"
 }
 
 dependencies {
@@ -24,6 +26,7 @@ dependencies {
     compile("com.google.flogger", "flogger", Version.FLOGGER)
     compile("org.apache.commons", "commons-lang3", Version.APACHE_COMMONS)
     compile("org.junit.jupiter", "junit-jupiter", Version.JUNIT)
+    compile("com.fasterxml.jackson.core", "jackson-databind", "2.10.3")
 }
 
 configure<JavaPluginConvention> {
@@ -41,9 +44,5 @@ tasks {
             showStandardStreams = false
             events("passed", "failed")
         }
-    }
-
-    withType(Wrapper::class) {
-        gradleVersion = "6.2.2"
     }
 }

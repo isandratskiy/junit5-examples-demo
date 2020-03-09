@@ -1,4 +1,4 @@
-package callback;
+package _02_callback;
 
 import lombok.val;
 import model.PersonModel;

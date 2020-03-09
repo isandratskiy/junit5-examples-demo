@@ -1,4 +1,4 @@
-package callback;
+package _02_callback;
 
 import model.PersonModel;
 import org.junit.jupiter.api.DisplayName;
