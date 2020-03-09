@@ -1,4 +1,3 @@
-@file:Suppress("DEPRECATION")
 
 group = "junit5.examples.demo"
 version = "1.0.0"
@@ -22,11 +21,11 @@ object Version {
 }
 
 dependencies {
-    compile("com.google.flogger", "flogger-system-backend", Version.FLOGGER)
-    compile("com.google.flogger", "flogger", Version.FLOGGER)
-    compile("org.apache.commons", "commons-lang3", Version.APACHE_COMMONS)
-    compile("org.junit.jupiter", "junit-jupiter", Version.JUNIT)
-    compile("com.fasterxml.jackson.core", "jackson-databind", Version.JACKSON)
+    implementation("com.google.flogger", "flogger-system-backend", Version.FLOGGER)
+    implementation("com.google.flogger", "flogger", Version.FLOGGER)
+    implementation("org.apache.commons", "commons-lang3", Version.APACHE_COMMONS)
+    implementation("org.junit.jupiter", "junit-jupiter", Version.JUNIT)
+    implementation("com.fasterxml.jackson.core", "jackson-databind", Version.JACKSON)
 }
 
 configure<JavaPluginConvention> {
@@ -38,7 +37,7 @@ tasks {
         useJUnitPlatform()
 
         testLogging {
-            displayGranularity = 5
+            displayGranularity = 2
             showStackTraces = false
             showExceptions = true
             showStandardStreams = false

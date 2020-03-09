@@ -10,6 +10,7 @@ import service.PersonService;
 import static org.junit.jupiter.api.Assertions.*;
 
 @ExtendWith(PersonServiceInjector.class)
+@DisplayName("Service instance post processor test example")
 class ServiceInstancePostProcessorTest {
     PersonService service;
 

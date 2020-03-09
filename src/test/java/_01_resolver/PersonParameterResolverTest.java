@@ -9,6 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @ExtendWith(PersonResolver.class)
+@DisplayName("Person parameter resolver test example")
 class PersonParameterResolverTest {
     @Test
     @DisplayName("should be invalid person model")
