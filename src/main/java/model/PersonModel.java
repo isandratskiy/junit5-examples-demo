@@ -33,4 +33,8 @@ public class PersonModel {
 	@Builder.Default
 	@JsonProperty("vacation")
 	private boolean vacation = false;
+
+	@Builder.Default
+	@JsonProperty("userStatus")
+	private String userStatus = "ACTIVE";
 }
