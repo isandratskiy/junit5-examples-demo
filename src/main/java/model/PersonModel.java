@@ -37,4 +37,8 @@ public class PersonModel {
 	@Builder.Default
 	@JsonProperty("userStatus")
 	private String userStatus = "ACTIVE";
+
+	@Builder.Default
+	@JsonProperty("lastTimeActive")
+	private String lastTimeActive = "15.10.2019";
 }
