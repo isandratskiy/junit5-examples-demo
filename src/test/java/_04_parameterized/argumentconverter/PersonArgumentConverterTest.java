@@ -25,7 +25,6 @@ public class PersonArgumentConverterTest {
                 of(ACTIVE, "15.02.2020"),
                 of(DEACTIVATED, "11.11.2019"),
                 of(HIDDEN, "18.01.2020")
-
         );
     }
 }
