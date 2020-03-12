@@ -19,6 +19,7 @@ public class PersonStatusArgumentConverter implements ArgumentConverter {
     public PersonModel convert(Object source, ParameterContext context) throws ArgumentConversionException {
         assertEquals(StatusEnum.class, source.getClass());
         assertTrue(context.getParameter().getType().isAssignableFrom(PersonModel.class));
+
         return stream(OBJECT_MAPPER.readValue(get(
                 "src/test/resources/person-test-data.json").toFile(), PersonModel[].class))
                 .filter(x -> x.getUserStatus().equals(source.toString()))
