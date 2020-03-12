@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 @DisplayName("Parametrized @JsonSource test example")
 class ParameterizedTests {
 
-	@JsonSource("src/test/resources/test-data.json")
+	@JsonSource("src/test/resources/person-test-data.json")
 	@DisplayName("custom parametrized person test")
 	@ParameterizedTest(name = "#{index} - should check person = {0}")
 	void customParameterizedTest(PersonModel person) {
