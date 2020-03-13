@@ -1,6 +1,7 @@
 package _04_parameterized.argumentprovider;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.SneakyThrows;
 import model.PersonModel;
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.params.provider.Arguments;
@@ -23,7 +24,7 @@ public class JsonArgumentProvider implements ArgumentsProvider, AnnotationConsum
 	}
 
 	@Override
-	public Stream<? extends Arguments> provideArguments(ExtensionContext context) throws Exception {
+	public Stream<? extends Arguments> provideArguments(ExtensionContext context) {
 		stream(context.getRequiredTestMethod().getParameterTypes())
 				.filter(x -> x.isAssignableFrom(PersonModel.class))
 				.findFirst()
@@ -31,7 +32,8 @@ public class JsonArgumentProvider implements ArgumentsProvider, AnnotationConsum
 		return readValues(resource).map(Arguments::of);
 	}
 
-	private <T> Stream<PersonModel> readValues(String resource) throws java.io.IOException {
+	@SneakyThrows
+	private <T> Stream<PersonModel> readValues(String resource) {
 		return stream(OBJECT_MAPPER.readValue(get(resource).toFile(), PersonModel[].class));
 	}
 }
