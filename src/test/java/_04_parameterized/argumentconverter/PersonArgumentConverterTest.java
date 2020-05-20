@@ -2,7 +2,6 @@ package _04_parameterized.argumentconverter;
 
 import model.PersonModel;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.converter.ConvertWith;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
@@ -15,8 +14,7 @@ import static org.junit.jupiter.params.provider.Arguments.of;
 public class PersonArgumentConverterTest {
     @MethodSource("statusSource")
     @ParameterizedTest(name = "person with status {0} should have last active time as {1}")
-    void canCreatePersonWithCustomName(@ConvertWith(PersonStatusArgumentConverter.class) PersonModel person,
-                                       String lastLogin) {
+    void canCreatePersonWithCustomName(@Convert PersonModel person, String lastLogin) {
         assertEquals(lastLogin, person.getLastTimeActive());
     }
 
