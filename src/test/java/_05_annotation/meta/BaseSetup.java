@@ -1,7 +1,6 @@
 package _05_annotation.meta;
 
 import _02_callback.SetupPersonVacationExtension;
-import _02_callback.VacationPersonResolver;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.api.parallel.Execution;
 
@@ -15,7 +14,6 @@ import static org.junit.jupiter.api.parallel.ExecutionMode.CONCURRENT;
 @Target({TYPE})
 @Retention(RUNTIME)
 @Execution(CONCURRENT)
-@ExtendWith({SetupPersonVacationExtension.class, VacationPersonResolver.class})
+@ExtendWith({SetupPersonVacationExtension.class})
 public @interface BaseSetup {
-
 }

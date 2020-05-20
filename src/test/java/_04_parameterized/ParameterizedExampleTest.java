@@ -31,7 +31,6 @@ class ParameterizedExampleTest {
                 of("Telcontar"),
                 of("Thorongil"),
                 of("Elrond")
-
         );
     }
 }

@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 //@BaseSetup //meta annotation
-@ExtendWith({SetupPersonVacationExtension.class, VacationPersonResolver.class})
+@ExtendWith({SetupPersonVacationExtension.class})
 @DisplayName("Person creation on before callback test example")
 class PersonVacationCallbackExampleTest {
     @Test
