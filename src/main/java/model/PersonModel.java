@@ -3,6 +3,10 @@ package model;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 
+import java.time.LocalDate;
+
+import static java.time.LocalDate.*;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -40,5 +44,9 @@ public class PersonModel {
 
 	@Builder.Default
 	@JsonProperty("lastTimeActive")
-	private String lastTimeActive = "15.10.2019";
+	private String lastTimeActive = "15-10-2019";
+
+	@Builder.Default
+	@JsonProperty("birthDate")
+	private LocalDate birthDate = parse("1965-12-12");
 }

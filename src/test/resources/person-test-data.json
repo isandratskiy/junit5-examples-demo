@@ -7,7 +7,7 @@
     "user": "muwaan",
     "vacation": false,
     "userStatus": "ACTIVE",
-    "lastTimeActive": "15.02.2020"
+    "lastTimeActive": "15-02-2020"
   },
   {
     "firstName": "Peregrin",
@@ -17,7 +17,7 @@
     "user": "took",
     "vacation": true,
     "userStatus": "DEACTIVATED",
-    "lastTimeActive": "11.11.2019"
+    "lastTimeActive": "11-11-2019"
   },
   {
     "firstName": "Meriadoc",
@@ -27,6 +27,6 @@
     "user": "brandybuck",
     "vacation": false,
     "userStatus": "HIDDEN",
-    "lastTimeActive": "18.01.2020"
+    "lastTimeActive": "18-01-2020"
   }
 ]
