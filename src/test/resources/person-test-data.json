@@ -6,7 +6,7 @@
     "email": "muwaan@gmail.com",
     "user": "muwaan",
     "vacation": false,
-    "userStatus": "ACTIVE",
+    "personStatus": "ACTIVE",
     "lastTimeActive": "15-02-2020"
   },
   {
@@ -16,7 +16,7 @@
     "email": "took@gmail.com",
     "user": "took",
     "vacation": true,
-    "userStatus": "DEACTIVATED",
+    "personStatus": "DEACTIVATED",
     "lastTimeActive": "11-11-2019"
   },
   {
@@ -26,7 +26,7 @@
     "email": "brandybuck@gmail.com",
     "user": "brandybuck",
     "vacation": false,
-    "userStatus": "HIDDEN",
+    "personStatus": "HIDDEN",
     "lastTimeActive": "18-01-2020"
   }
 ]

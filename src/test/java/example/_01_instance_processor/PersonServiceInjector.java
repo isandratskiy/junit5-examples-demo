@@ -4,11 +4,12 @@ import lombok.val;
 import model.PersonModel;
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.api.extension.TestInstancePostProcessor;
+import org.junit.jupiter.api.extension.TestInstancePreDestroyCallback;
 import service.PersonService;
 
 import static java.util.Arrays.*;
 
-public class PersonServiceInjector implements TestInstancePostProcessor {
+public class PersonServiceInjector implements TestInstancePostProcessor, TestInstancePreDestroyCallback {
 
     @Override
     public void postProcessTestInstance(Object testInstance, ExtensionContext context) throws NoSuchFieldException, IllegalAccessException {
@@ -24,5 +25,10 @@ public class PersonServiceInjector implements TestInstancePostProcessor {
                         .firstName("Magni")
                         .build()
         ));
+    }
+
+    @Override
+    public void preDestroyTestInstance(ExtensionContext context) {
+
     }
 }

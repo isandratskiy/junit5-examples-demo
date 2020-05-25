@@ -13,8 +13,8 @@ import static org.junit.jupiter.params.provider.Arguments.of;
 
 public class PersonArgumentConverterTest {
 
-    @ParameterizedTest(name = "#{index} person with status {0} should have last active time as {1}")
     @MethodSource("statusSource")
+    @ParameterizedTest(name = "#{index} person with status {0} should have last active time as {1}")
     void canCreatePersonWithCustomName(@PersonConverter PersonModel person, String lastLogin) {
         assertEquals(lastLogin, person.getLastTimeActive());
     }

@@ -23,7 +23,7 @@ public class PersonStatusArgumentConverter implements ArgumentConverter {
                 && context.isAnnotated(PersonConverter.class))
             return stream(OBJECT_MAPPER.readValue(get(
                     "src/test/resources/person-test-data.json").toFile(), PersonModel[].class))
-                    .filter(x -> x.getUserStatus().equals(source.toString()))
+                    .filter(person -> person.getPersonStatus().equals(source.toString()))
                     .findFirst()
                     .orElseThrow(
                             () -> new ArgumentConversionException("Person with user status " + source + " not found"));

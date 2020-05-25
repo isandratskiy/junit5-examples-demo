@@ -39,8 +39,8 @@ public class PersonModel {
 	private boolean vacation = false;
 
 	@Builder.Default
-	@JsonProperty("userStatus")
-	private String userStatus = "ACTIVE";
+	@JsonProperty("personStatus")
+	private String personStatus = "ACTIVE";
 
 	@Builder.Default
 	@JsonProperty("lastTimeActive")
