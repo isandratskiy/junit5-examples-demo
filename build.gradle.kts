@@ -14,7 +14,7 @@ repositories {
 
 object Version {
     const val FLOGGER = "0.4"
-    const val JUNIT = "5.6.2"
+    const val JUNIT = "5.7.0-M1"
     const val LOMBOK = "1.18.10"
     const val APACHE_COMMONS = "3.9"
     const val JACKSON = "2.10.3"

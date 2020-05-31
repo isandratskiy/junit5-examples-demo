@@ -1,6 +1,5 @@
-package example._03_callback;
+package example._03_lifecycle_callback;
 
-import example._05_annotation.meta.BaseSetup;
 import model.PersonModel;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

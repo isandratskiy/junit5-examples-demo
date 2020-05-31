@@ -50,8 +50,10 @@ class NestedClassExampleTest {
 
             @BeforeAll
             void arrangeSecondNested() {
-                this.person = new PersonModel().toBuilder().build();
-                log.atInfo().log("SECOND NESTED BEFORE ALL ==> " + this.person.toString());
+                this.person = new PersonModel()
+                        .toBuilder()
+                        .email("foobar@emil.com")
+                        .build();
             }
 
             @BeforeEach
@@ -69,7 +71,7 @@ class NestedClassExampleTest {
             @Test
             @DisplayName("name should not be equal")
             void secondNestedNotEqualTest() {
-                assertEquals("Sauron", this.person.getFirstName());
+                assertEquals("foobar@emil.com", this.person.getEmail());
             }
         }
     }

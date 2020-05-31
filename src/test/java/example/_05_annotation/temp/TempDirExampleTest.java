@@ -18,9 +18,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertLinesMatch;
 import static org.junit.jupiter.api.Assumptions.*;
-import static org.junit.jupiter.api.parallel.ExecutionMode.CONCURRENT;
 
-@Execution(CONCURRENT)
 @DisplayName("Temporary directory creation example test")
 class TempDirExampleTest {
     private static final FluentLogger log = forEnclosingClass();
@@ -50,7 +48,7 @@ class TempDirExampleTest {
         log.atInfo().log(this.classFieldTempDir.toString());
 
         val letters = new File(this.classFieldTempDir, "letters.txt");
-        val lines = asList("x", "y", "z");
+        val lines = asList("2", "9", "z");
         write(letters.toPath(), lines);
 
         assertAll(

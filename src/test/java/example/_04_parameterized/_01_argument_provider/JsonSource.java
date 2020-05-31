@@ -1,4 +1,4 @@
-package example._04_parameterized._02_argument_provider;
+package example._04_parameterized._01_argument_provider;
 
 import org.junit.jupiter.params.provider.ArgumentsSource;
 

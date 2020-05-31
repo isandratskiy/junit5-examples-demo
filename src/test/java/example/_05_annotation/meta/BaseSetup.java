@@ -1,6 +1,6 @@
 package example._05_annotation.meta;
 
-import example._03_callback.SetupPersonVacationExtension;
+import example._03_lifecycle_callback.SetupPersonVacationExtension;
 import org.junit.jupiter.api.extension.ExtendWith;
 
 import java.lang.annotation.Retention;

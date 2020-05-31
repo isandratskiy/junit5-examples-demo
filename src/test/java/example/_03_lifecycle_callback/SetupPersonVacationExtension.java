@@ -1,4 +1,4 @@
-package example._03_callback;
+package example._03_lifecycle_callback;
 
 import lombok.val;
 import model.PersonModel;

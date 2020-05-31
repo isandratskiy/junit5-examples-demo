@@ -1,7 +1,10 @@
 package model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.*;
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 import java.time.LocalDate;
 
@@ -12,7 +15,6 @@ import static java.time.LocalDate.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder(toBuilder = true)
-@ToString
 public class PersonModel {
 	@Builder.Default
 	@JsonProperty("firstName")
@@ -49,4 +51,10 @@ public class PersonModel {
 	@Builder.Default
 	@JsonProperty("birthDate")
 	private LocalDate birthDate = parse("1965-12-12");
+
+	@SneakyThrows
+	@Override
+	public String toString() {
+		return new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(this);
+	}
 }

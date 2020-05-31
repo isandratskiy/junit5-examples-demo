@@ -1,4 +1,4 @@
-package example._04_parameterized._01_argument_converter;
+package example._04_parameterized._02_argument_converter;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.SneakyThrows;
