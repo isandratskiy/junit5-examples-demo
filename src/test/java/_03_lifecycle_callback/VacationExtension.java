@@ -8,7 +8,7 @@ import service.PersonService;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.extension.ExtensionContext.Namespace.*;
 
-public class SetupPersonVacationExtension implements BeforeAllCallback, AfterAllCallback, BeforeEachCallback, AfterEachCallback {
+public class VacationExtension implements BeforeAllCallback, AfterAllCallback, BeforeEachCallback, AfterEachCallback {
     private static final String PERSON_KEY = "person";
 
     @Override

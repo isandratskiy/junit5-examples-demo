@@ -1,7 +1,5 @@
-package _05_annotation.meta;
+package _03_lifecycle_callback;
 
-import _03_lifecycle_callback.PersonResolver;
-import _03_lifecycle_callback.SetupPersonVacationExtension;
 import org.junit.jupiter.api.extension.ExtendWith;
 
 import java.lang.annotation.Retention;
@@ -12,6 +10,6 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 @Target({TYPE})
 @Retention(RUNTIME)
-@ExtendWith({SetupPersonVacationExtension.class, PersonResolver.class})
+@ExtendWith({VacationExtension.class, PersonResolver.class})
 public @interface BaseSetup {
 }

@@ -1,6 +1,5 @@
 package _03_lifecycle_callback;
 
-import _05_annotation.meta.BaseSetup;
 import model.PersonModel;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -10,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 //@BaseSetup
-@ExtendWith({SetupPersonVacationExtension.class, PersonResolver.class})
+@ExtendWith({VacationExtension.class, PersonResolver.class})
 class PersonVacationCallbackTest {
 
     @Test
