@@ -1,4 +1,4 @@
-name: JUnit5 Example Build
+name: Run JUnit5 Example Tests
 
 on: [push]
 
@@ -11,5 +11,5 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
-      - name: Build with Gradle
+      - name: run tests
         run: ./gradlew clean test
