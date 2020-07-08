@@ -12,5 +12,6 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Target(METHOD)
 @ArgumentsSource(JsonArgumentProvider.class)
 public @interface JsonSource {
+
 	String value();
 }
