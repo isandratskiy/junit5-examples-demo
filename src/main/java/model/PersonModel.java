@@ -1,14 +1,12 @@
 package model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.*;
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 import java.time.LocalDate;
 
-import static java.time.LocalDate.*;
+import static java.time.LocalDate.parse;
 
 @Getter
 @Setter

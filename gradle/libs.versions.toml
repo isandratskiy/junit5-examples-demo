@@ -1,0 +1,9 @@
+[versions]
+junitVer = "5.8.0"
+apacheCommonsVer = "3.12.0"
+jacksonVer = "2.11.4"
+
+[libraries]
+junit = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junitVer" }
+jackson = { module = "com.fasterxml.jackson.core:jackson-databind", version.ref = "jacksonVer" }
+apacheCommons = { module = "org.apache.commons:commons-lang3", version.ref = "apacheCommonsVer" }

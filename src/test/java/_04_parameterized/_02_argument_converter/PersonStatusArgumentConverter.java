@@ -9,7 +9,7 @@ import org.junit.jupiter.params.converter.ArgumentConverter;
 
 import static java.nio.file.Paths.get;
 import static java.util.Arrays.stream;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class PersonStatusArgumentConverter implements ArgumentConverter {
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
@@ -27,6 +27,7 @@ public class PersonStatusArgumentConverter implements ArgumentConverter {
                     .findFirst()
                     .orElseThrow(
                             () -> new ArgumentConversionException("Person with user status " + source + " not found"));
+
         else throw new ArgumentConversionException("Not found assignable parameter with annotation @PersonConvert");
     }
 }
